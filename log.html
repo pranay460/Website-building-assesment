@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign Up - The Golf Club</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/f2/56/fa/f256fa53f4a71faeafdc7d83ece05548.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #006400; 
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #004d00; 
+        }
+
+        .navbar .logo {
+            height: 70px; 
+            width: auto; 
+        }
+
+        .signup-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            z-index: 2;
+        }
+
+        h1 {
+            color: #004d00; 
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            color: #999;
+            transition: 0.3s;
+            font-size: 1em;
+            pointer-events: none;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            font-size: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group input:focus {
+            border-color: #004d00; 
+        }
+
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            top: -15px;
+            left: 10px;
+            color: #004d00; 
+            font-size: 0.8em;
+        }
+
+        button {
+            background-color: #004d00; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background-color: #003300; 
+            transform: scale(1.05);
+        }
+
+        .login-link {
+            margin-top: 20px;
+            color: #004d00; 
+        }
+
+        .login-link a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #004d00; 
+            transition: color 0.3s;
+        }
+
+        .login-link a:hover {
+            color: #003300; 
+        }
+
+        .footer {
+            background-color: #333;
+            color: #90EE90;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #90EE90;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #fff;
+        }
+
+        .footer .testimonial {
+            color: #006400;
+            text-align: right;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        @media (max-width: 480px) {
+            .signup-container {
+                padding: 20px;
+                max-width: 90%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            button {
+                font-size: 1em;
+            }
+
+            .footer {
+                padding: 10px;
+            }
+
+            .footer h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <img src="golf-club-high-resolution-logo (1).png" alt="The Golf Club Logo" class="logo">
+        </a>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="Sign.html">Sign in</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="About.html">About us</a>
+            <a href="Membership.html">Membership</a>
+            <a href="Booking.html">Booking</a>
+        </div>
+    </div>
+
+    <div class="signup-container">
+        <h1>Login</h1>
+        <form action="home.html" method="get">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder=" " required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder=" " required>
+                <label for="password">Password</label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="login-link">
+            <p>Don't have an account? <a href="sign.html">Sign Up</a></p>
+        </div>
+    </div>
