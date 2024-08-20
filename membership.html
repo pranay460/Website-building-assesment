@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Membership - The Golf Club</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://t4.ftcdn.net/jpg/02/83/29/93/360_F_283299374_tIjJXE360HvdK9r5pskkZbeTQ2qokQfT.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #006400; 
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+          }
+          .navbar a:hover {
+            background-color: #004d00; 
+          }
+          .navbar .logo {
+            height: 70px; 
+            width: auto; 
+          }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 80px; 
+            margin-bottom: 80px; 
+        }
+
+        .section {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            color: #004d00; 
+        }
+
+        .membership-plans {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .membership-plan {
+            background: #e0f2e9; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .membership-plan h3 {
+            margin: 10px 0;
+        }
+
+        .membership-plan p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .membership-plan button {
+            background-color: #004d00; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .membership-plan button:hover {
+            background-color: #003300; 
+        }
+
+        .signup-form {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .signup-form h2 {
+            margin-bottom: 20px;
+        }
+
+        .signup-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .signup-form label {
+            font-weight: bold;
+        }
+
+        .signup-form input, .signup-form select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .signup-form button {
+            background-color: #004d00; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signup-form button:hover {
+            background-color: #003300; 
+        }
+
+        @media (max-width: 768px) {
+            .membership-plans {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .membership-plan {
+                min-width: 90%;
+            }
+        }
+
+     
+        .footer {
+            background-color: #333; 
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer h2 {
+            color: #00FF00; 
+        }
+
+        .footer a {
+            color: #00FF00; 
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">
+            <img src="golf-club-high-resolution-logo (1).png" alt="The Golf Club Logo" class="logo">
+        </a>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Booking</a>
+            <a href="sign.html">Sign up</a>
+            <a href="log.html">Login</a>
+       
+            
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h1>Membership Plans</h1>
+            <div class="membership-plans">
+                <div class="membership-plan">
+                    <h3>Basic Plan</h3>
+                    <p>$29.99/month</p>
+                    <p>Access to all standard facilities</p>
+                    <button>Join Now</button>
+                </div>
+                <div class="membership-plan">
+                    <h3>Premium Plan</h3>
+                    <p>$49.99/month</p>
+                    <p>Access to all facilities + Premium benefits</p>
+                    <button>Join Now</button>
+                </div>
+                <div class="membership-plan">
+                    <h3>Family Plan</h3>
+                    <p>$79.99/month</p>
+                    <p>Access for up to 4 family members</p>
+                    <button>Join Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section signup-form">
+            <h2>Sign Up for Membership</h2>
+            <form action="home.html" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="plan">Select Plan</label>
+                <select id="plan" name="plan" required>
+                    <option value="basic">Basic Plan - $29.99/month</option>
+                    <option value="premium">Premium Plan - $49.99/month</option>
+                    <option value="family">Family Plan - $79.99/month</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Contact Us</h2>
+        <p>For more details about our services, please <a href="contact.html">get in touch</a>.</p>
+        <p>&copy; 2024 The Golf Club. All rights reserved.</p>
+    </div>
+</body>
+</html>
